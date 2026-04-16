@@ -12,7 +12,7 @@ async fn main() -> redis::RedisResult<()> {
     let mut con = client.get_multiplexed_tokio_connection().await?;
     
     println!("\nConnecté à '{}'\n", channel_name);
-    println!("Tapez les mess ('exit' pour sortir):\n");
+    println!("Tapez les messages ('exit' pour sortir):\n");
 
     let stdin = io::stdin();
     let mut reader = BufReader::new(stdin).lines();

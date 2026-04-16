@@ -19,7 +19,7 @@ async fn main() -> redis::RedisResult<()> {
     while let Some(msg) = stream.next().await {
         let playload: String = msg.get_payload()?;
         
-        println!("Reçu sur {}: '{}'", channel_name, playload);
+        println!("Messages reçu sur {}: '{}'", channel_name, playload);
 
         if playload == "exit" { 
             println!("\nFIN");
