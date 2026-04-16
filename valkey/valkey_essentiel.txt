@@ -1,0 +1,29 @@
+==================================================
+        VALKEY : COMMANDES ESSENTIELLES
+==================================================
+
+--------------------------------------------------
+KEYS * : Lister toutes les clés
+RENAME <old> <new> : Renommer une clé
+DEL <key>          : Supprimer une clé
+EXPIRE <key> 60    : La clé s'effacera dans 60 secondes
+TTL <key>          : Temps restant avant expiration (-1 = infini)
+
+--------------------------------------------------
+JSON.SET <key> $ '{"id":1}' : Créer un objet JSON
+JSON.GET <key> $            : Lire l'objet complet
+JSON.GET <key> $.nom        : Lire un champ spécifique
+JSON.DEL <key> $.nom        : Supprimer un champ dans le JSON
+JSON.TYPE <key> $           : Vérifier que c'est bien du JSON
+
+--------------------------------------------------
+INFO               : Statistiques complètes du serveur
+MONITOR            : Voir toutes les commandes reçues en temps réel
+MODULE LIST        : Vérifier si 'json' est chargé bien
+
+
+
+
+-------------------------------------------------
+JSON.SET k1 . '{"a":{"a":1, "b":2, "c":3}}'
+JSON.SET k2 . '{"a": [1,2,3,4,5]}'

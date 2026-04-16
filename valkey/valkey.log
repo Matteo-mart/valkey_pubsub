@@ -1,0 +1,20 @@
+14440:M 16 Apr 2026 08:48:30.589 * oO0OoO0OoO0Oo Valkey is starting oO0OoO0OoO0Oo
+14440:M 16 Apr 2026 08:48:30.589 * Valkey version=9.0.3, bits=64, commit=00000000, modified=0, pid=14440, just started
+14440:M 16 Apr 2026 08:48:30.589 * Configuration loaded
+14440:M 16 Apr 2026 08:48:30.590 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+14440:M 16 Apr 2026 08:48:30.590 * monotonic clock: POSIX clock_gettime
+14440:M 16 Apr 2026 08:48:30.590 * Running mode=standalone, port=6379.
+14440:M 16 Apr 2026 08:48:30.668 * Module 'json' loaded from /home/matteo/valkey-json/build/src/libjson.so
+14440:M 16 Apr 2026 08:48:30.669 * Server initialized
+14440:M 16 Apr 2026 08:48:30.669 * Cleaning slot migration log in anticipation of a load operation.
+14440:M 16 Apr 2026 08:48:30.669 * Loading RDB produced by Valkey version 9.0.3
+14440:M 16 Apr 2026 08:48:30.669 * RDB age 152 seconds
+14440:M 16 Apr 2026 08:48:30.669 * RDB memory usage when created 4.99 Mb
+14440:M 16 Apr 2026 08:48:30.669 * Done loading RDB, keys loaded: 6, keys expired: 0.
+14440:M 16 Apr 2026 08:48:30.669 * DB loaded from disk: 0.000 seconds
+14440:M 16 Apr 2026 08:48:30.669 * Ready to accept connections tcp
+14440:signal-handler (1776322337) Received SIGTERM scheduling shutdown...
+14440:M 16 Apr 2026 08:52:17.290 * User requested shutdown...
+14440:M 16 Apr 2026 08:52:17.290 * Saving the final RDB snapshot before exiting.
+14440:M 16 Apr 2026 08:52:17.370 * DB saved on disk
+14440:M 16 Apr 2026 08:52:17.370 # Valkey is now ready to exit, bye bye...

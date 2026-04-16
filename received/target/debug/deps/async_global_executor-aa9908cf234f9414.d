@@ -1,0 +1,10 @@
+/home/matteo/Documents/proj/pubsub/target/debug/deps/async_global_executor-aa9908cf234f9414.d: /home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/lib.rs /home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/config.rs /home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/executor.rs /home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/init.rs /home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/reactor.rs /home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/threading.rs
+
+/home/matteo/Documents/proj/pubsub/target/debug/deps/libasync_global_executor-aa9908cf234f9414.rmeta: /home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/lib.rs /home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/config.rs /home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/executor.rs /home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/init.rs /home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/reactor.rs /home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/threading.rs
+
+/home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/lib.rs:
+/home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/config.rs:
+/home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/executor.rs:
+/home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/init.rs:
+/home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/reactor.rs:
+/home/matteo/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-global-executor-2.4.1/src/threading.rs:
