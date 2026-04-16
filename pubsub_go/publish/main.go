@@ -1,21 +1,11 @@
 package main
 
 import (
-	"context"
 	"fmt"
-
-	"github.com/redis/go-redis/v9"
 )
 
 func main() {
-
-	ClearTerminal()
-
-	ctx := context.Background()
-	rdc := redis.NewClient(&redis.Options{
-		// Addr: "redis://127.0.0.1:6379",
-		Addr: "127.0.0.1:6379",
-	})
+	ctx, rdc, channelName := setupRedis()
 
 	fmt.Println("Connecté, Tapez 'exit' pour sortir:")
 
@@ -27,7 +17,7 @@ func main() {
 			continue
 		}
 
-		rdc.Publish(ctx, "local_channel", input)
+		rdc.Publish(ctx, channelName, input)
 
 		if input == "exit" {
 			fmt.Println("FIN")

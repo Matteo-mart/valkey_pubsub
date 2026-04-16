@@ -1,0 +1,1 @@
+/home/matteo/Documents/proj/valkey_pubsub/pubsub_rust/published/target/debug/published: /home/matteo/Documents/proj/valkey_pubsub/pubsub_rust/published/src/main.rs /home/matteo/Documents/proj/valkey_pubsub/pubsub_rust/published/src/setup_redis.rs

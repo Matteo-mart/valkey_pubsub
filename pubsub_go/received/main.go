@@ -1,28 +1,16 @@
 package main
 
 import (
-	"context"
 	"fmt"
-
-	"github.com/redis/go-redis/v9"
 )
 
 func main() {
+	ctx, rdc, channelName := setupRedis()
 
-	ClearTerminal()
-
-	ctx := context.Background()
-	channelName := "local_channel"
-
-	rdc := redis.NewClient(&redis.Options{
-		// Addr: "redis://127.0.0.1:6379",
-		Addr: "127.0.0.1:6379",
-	})
+	fmt.Printf("\nConnecté à '%s'\n", channelName)
 
 	pubsub := rdc.Subscribe(ctx, channelName)
 	defer pubsub.Close()
-
-	fmt.Printf("\nConnecté à '%s'\n", channelName)
 
 	channel := pubsub.Channel()
 
@@ -34,4 +22,5 @@ func main() {
 			break
 		}
 	}
+
 }
