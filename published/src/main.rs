@@ -11,7 +11,7 @@ async fn main() -> redis::RedisResult<()> {
     
     let mut con = client.get_multiplexed_tokio_connection().await?;
     
-    println!("Connecté sur '{}'", channel_name);
+    println!("\nConnecté à '{}'\n", channel_name);
     println!("Tapez les mess ('exit pour quitter'):\n");
 
     let stdin = io::stdin();
