@@ -1,0 +1,54 @@
+==================================================
+        VALKEY : INFOS
+==================================================
+
+------------------------------------------------------
+Nombre de clients maximum simultanéments        : 10 000
+Nombre de clés maximum                          : 4 milliards
+Taille maximale pour une clés (une str)         : 512 MB
+
+------------------------------------------------------
+Port par défaut                                 : 6379
+Nombre de bases de données                      : 16 (indexées de 0 à 15)
+Latence moyenne                                 : < 1ms (en local)
+
+
+==================================================
+        VALKEY : COMMANDES ESSENTIELLES
+==================================================
+
+--------------------------------------------------
+KEYS * : Lister toutes les clés
+RENAME <old> <new> : Renommer une clé
+DEL <key>          : Supprimer une clé
+EXPIRE <key> 60    : La clé s'effacera dans 60 secondes
+TTL <key>          : Temps restant avant expiration
+
+--------------------------------------------------
+JSON.SET <key> $ '{"id":1}' : Créer un objet JSON
+JSON.GET <key> $            : Lire l'objet complet
+JSON.GET <key> $.nom        : Lire un champ spécifique
+JSON.DEL <key> $.nom        : Supprimer un champ dans le JSON
+JSON.TYPE <key> $           : Vérifier que c'est bien du JSON
+
+--------------------------------------------------
+INFO               : Statistiques complètes du serveur
+MONITOR            : Voir toutes les commandes reçues en temps réel
+MODULE LIST        : Vérifier si 'json' est chargé bien
+
+--------------------------------------------------
+ADMINISTRATION
+DBSIZE             : Nombre de clés dans la base actuelle
+FLUSHDB            : Supprimer TOUTES les clés de la base actuelle
+SAVE               : Sauvegarde immédiate sur le disque (synchrone)
+BGSAVE             : Sauvegarde en arrière-plan (recommandé)
+CONFIG GET *       : Voir toute la configuration du serveur
+
+
+==================================================
+        VALKEY : EXEMPLES
+==================================================
+
+-------------------------------------------------
+JSON.SET k1 . '{"a":{"a":1, "b":2, "c":3}}'
+JSON.SET k2 . '{"a": [1,2,3,4,5]}'
