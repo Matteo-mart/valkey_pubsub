@@ -22,7 +22,9 @@ MONITOR            : Voir toutes les commandes reçues en temps réel
 MODULE LIST        : Vérifier si 'json' est chargé bien
 
 
-
+==================================================
+        VALKEY : EXEMPLES
+==================================================
 
 -------------------------------------------------
 JSON.SET k1 . '{"a":{"a":1, "b":2, "c":3}}'
